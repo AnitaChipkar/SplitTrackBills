@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBackground"
+    android:focusableInTouchMode="true">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:drawablePadding="@dimen/text_margin"
+                    android:text="@string/text_paid_by"
+                    android:textSize="@dimen/text_large" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_member_24dp" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spin_member_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/text_medium" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:background="@color/colorLightBackground" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_description_24dp"
+                    android:drawablePadding="@dimen/text_margin"
+                    android:hint="@string/text_description"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textSize="@dimen/text_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:background="@color/colorLightBackground" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_rupees_24dp"
+                    android:drawablePadding="@dimen/text_margin"
+                    android:hint="@string/text_amount"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:background="@color/colorLightBackground" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_date_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:drawableStart="@drawable/ic_calender_24dp"
+                    android:drawablePadding="@dimen/text_margin"
+                    android:textSize="@dimen/text_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="@dimen/text_margin"
+                    android:background="@color/colorLightBackground" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_split_expense_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="16dp"
+                    android:text="@string/text_split"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="@color/colorGreen" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_expense_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cash_spent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F8F8F8"
+                    android:padding="4dp"
+                    android:text="@string/text_cash_spent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_large"
+                    android:textStyle="normal" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:background="@color/colorAccent"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_paid_member"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/text_margin"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_medium"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_paid_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="12dp"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_large"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_edit_expense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcv_split_expense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_save_expense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="16dp"
+                    android:text="@string/text_save_member"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="@color/colorGreen" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

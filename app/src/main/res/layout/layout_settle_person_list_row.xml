@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ll_expense_settlement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start">
+
+                <LinearLayout
+                    android:id="@+id/ll_paid_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_settle_oval"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_paid_person_first_letter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:text="A"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_medium"/>
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_paid_person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@id/ll_paid_person"
+                    android:text="Amit Chipkar"
+                    android:textSize="@dimen/text_medium" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_paid_person_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_paid_person_name"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@id/ll_paid_person"
+                    android:text="₹1600.00"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="@dimen/text_small"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_settle_person_bill_24dp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/ll_settle_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_settle_oval"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_settle_person_first_letter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:text="A"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_medium"/>
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_settle_person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@id/ll_settle_person"
+                    android:text="Anita Gaikwad"
+                    android:textSize="@dimen/text_medium" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:background="@color/colorLightBackground" />
+    </LinearLayout>

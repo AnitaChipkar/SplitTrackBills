@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_all_groups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginEnd="@dimen/text_margin"
+        android:text="@string/text_groups"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_group_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_all_groups"
+        android:layout_margin="@dimen/text_margin" />
+
+    <LinearLayout
+        android:id="@+id/ll_no_groups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_split_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_split_bill" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_split_bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:text="@string/text_split_bill_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_large" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_split_bill_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_split_bill_description"
+            android:textSize="@dimen/text_medium" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_split_bill_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_create_group_black_24dp"
+            android:drawablePadding="@dimen/text_margin"
+            android:text="@string/text_split_bill_group"
+            android:textSize="@dimen/text_medium" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_create_group_24dp" />
+</RelativeLayout>

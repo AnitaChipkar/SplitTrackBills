@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/text_margin">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_member_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Anita Chipkar"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_medium" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_member_contact_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_member_name"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif"
+                android:text="+917040175622"
+                android:textSize="@dimen/text_medium" />
+
+          <!--  <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_remove_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_remove_member_24dp" />-->
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

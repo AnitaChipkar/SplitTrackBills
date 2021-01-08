@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardElevation="4dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin">
+
+        <LinearLayout
+            android:id="@+id/ll_expense_first_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/text_margin"
+            android:background="@drawable/ic_expense_oval"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_expense_first_letter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="G"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_toStartOf="@+id/tv_expense_amount"
+            android:layout_toEndOf="@+id/ll_expense_first_letter">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_expense_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_large" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_expense_paid_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_expense_name"
+                android:text="G"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="normal" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_expense_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_expense_paid_by"
+                android:text="G"
+                android:textSize="@dimen/text_small"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_expense_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_text_square"
+            android:fontFamily="sans-serif"
+            android:text="58000"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="normal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_settle_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_expense_amount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/text_settled"
+            android:textColor="#10ccb4"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_settle_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_expense_amount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_settle_bill_24dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

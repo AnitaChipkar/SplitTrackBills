@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_group_first_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/text_margin"
+            android:fontFamily="sans-serif"
+            android:text="@string/text_add_contact"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_large"
+            android:textStyle="normal" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:background="@drawable/ic_square_edittext"
+            android:hint="@string/text_name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:padding="12dp"
+            android:textSize="@dimen/text_medium" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:background="@drawable/ic_square_edittext"
+            android:hint="@string/text_mobile_number"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="12dp"
+            android:textSize="@dimen/text_medium" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:padding="16dp"
+            android:text="@string/btn_text_save_contact"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/colorAccent" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

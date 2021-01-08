@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/text_margin"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_add_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Anita Chipkar"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_medium" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_add_contact_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_add_member"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:text="+917040175622"
+            android:textSize="@dimen/text_medium" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_dialog_remove_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_remove_member_24dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_add_contact_no"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

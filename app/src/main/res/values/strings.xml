@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Split &amp; Track Bills</string>
+    <string name="activity_group">Create Group</string>
+    <string name="activity_expense">Expenses</string>
+    <string name="activity_add_expense">Add Expense</string>
+    <string name="activity_settlement">Expense Settlement Details</string>
+    <string name="action_add_remove">add/remove member</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="text_groups">Groups</string>
+    <string name="text_split_bill_title">Create Group &amp; Split Bills</string>
+    <string name="text_split_bill_description">Organize your group expenses.</string>
+    <string name="text_split_bill_group">Create group by clicking</string>
+
+
+    <string name="text_add_contact">Add Contact</string>
+    <string name="text_name">Enter your name</string>
+    <string name="text_mobile_number">Enter mobile number</string>
+    <string name="btn_text_save_contact">Save Contact</string>
+    <string name="btn_text_add_contact">Add Contact</string>
+    <string name="text_add_remove_member">Add / Remove Member</string>
+
+
+    <string name="hint_group_name">Enter Group Name</string>
+    <string name="text_group_name">Group Name</string>
+    <string name="text_group_members">Group Members</string>
+    <string name="text_add_member">Add Member</string>
+    <string name="text_save_member">Save</string>
+
+
+    <string name="text_add_expense">Add Expenses</string>
+    <string name="text_paid_by">Paid by</string>
+    <string name="text_description">Description</string>
+    <string name="text_amount">Amount</string>
+    <string name="text_split">Split</string>
+    <string name="text_cash_spent">Cash Spent</string>
+
+
+    <!-- Strings used for Settlements -->
+    <string name="text_settled">Settled</string>
+    <string name="text_overview">Expense Overview</string>
+    <string name="text_who_settle">WHO DO YOU WANT TO SETTLE?</string>
+    <string name="text_settle_amount">Settle Amount</string>
+
+
+</resources>
